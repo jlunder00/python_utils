@@ -20,11 +20,11 @@ def random_rgb(width,height):
     img = Image.fromarray(im, 'RGB')
     return img
 
-def save_image(img, path=Path('./image'), format='jpg'):
+def save_image(img, path=Path('./image'), format='png'):
     img.save(str(path), format)
 
 
 if __name__ == '__main__':
-    for i in range(100, 2000, 200):
-        save_image(img=random_rgb(i, i), path=Path('/Data/test_images/image_'+str(i)+'_'+str(i)), format='jpg')
+    for i in range(1000, 5000, 500):
+        save_image(img=random_rgb(i, i), path=Path('/mnt/d/Data/test_images/image_'+str(i)+'_'+str(i)+'.png'), format='png')
 
