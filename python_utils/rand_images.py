@@ -17,7 +17,7 @@ def random_rgb(width,height):
             green = random.randint(0,255)
             blue = random.randint(0,255)
             im[r][c] = [red,green,blue]
-    img = Image.fromarray(im,, 'RGB')
+    img = Image.fromarray(im, 'RGB')
     return img
 
 def save_image(img, path=Path('./image'), format='jpg'):
